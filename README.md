@@ -214,6 +214,5 @@ Reemplazando `12` por el número del Issue.
 
 Una vez aprobado e integrado el Pull Request en `develop`, se verificará que la tarea esté completa y se cerrará el Issue.
 
-**Nota:** GitHub realiza el cierre automático mediante palabras clave como `Closes #12` cuando los cambios se integran en la rama predeterminada del repositorio. Como el flujo de trabajo utiliza `develop` como rama de integración, los Issues se cerrarán manualmente después del merge a `develop`, salvo que se configure otro mecanismo.
 
 
