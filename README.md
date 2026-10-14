@@ -16,7 +16,7 @@ La documentación específica del estimador de canal se mantendrá en este repos
 
 ## Estructura inicial
 
-El repositorio se organiza de manera modular, siguiendo una estructura similar a la utilizada en proyectos de diseño digital.
+El repositorio se organiza por módulos, agrupando en cada uno sus modelos, simulaciones y archivos de implementación.
 
 En esta primera etapa, el desarrollo estará enfocado en la simulación de alto nivel en Python.
 
