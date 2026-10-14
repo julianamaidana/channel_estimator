@@ -21,20 +21,42 @@ En esta primera etapa, el trabajo estará enfocado en la simulación de alto niv
 ```text
 channel_estimator/
 │
-├── high_level_simulation/
-│   ├── signal_generation/
-│   ├── analog_channel/
-│   ├── cal_adc/
-│   ├── channel_estimator/
-│   ├── correlator/
+├── top/
+│   ├── python/
 │   ├── simulations/
 │   └── tests/
 │
-├── docs/
+├── modules/
+│   │
+│   ├── signal_generation/
+│   │   ├── python/
+│   │   ├── simulations/
+│   │   └── tests/
+│   │
+│   ├── analog_channel/
+│   │   ├── python/
+│   │   ├── simulations/
+│   │   └── tests/
+│   │
+│   ├── cal_adc/
+│   │   ├── python/
+│   │   ├── simulations/
+│   │   └── tests/
+│   │
+│   ├── channel_estimator/
+│   │   ├── python/
+│   │   ├── simulations/
+│   │   └── tests/
+│   │
+│   └── correlator/
+│       ├── python/
+│       ├── simulations/
+│       └── tests/
 │
+├── docs/
 ├── .gitignore
-├── README.md
-└── requirements.txt
+├── requirements.txt
+└── README.md
 ```
 
 ### Descripción de las carpetas
