@@ -6,6 +6,13 @@ Este repositorio se utilizará para el desarrollo, simulación y validación del
 
 El trabajo se organizará mediante **GitHub Projects, Issues, branches y Pull Requests**, de forma que cada tarea tenga un responsable y se desarrolle de manera independiente antes de integrarse al proyecto.
 
+## Proyecto FI-AFE
+
+Este repositorio forma parte del proyecto general:
+
+[FI-AFE_2026](https://github.com/Fundacion-Fulgor/FI-AFE_2026)
+
+El módulo se integra al repositorio principal como un submódulo del sistema completo.
 ## Documentación
 
 La documentación general del proyecto FI-AFE se encuentra disponible en la Wiki del repositorio principal:
@@ -209,10 +216,4 @@ Una vez aprobado e integrado el Pull Request en `develop`, se verificará que la
 
 **Nota:** GitHub realiza el cierre automático mediante palabras clave como `Closes #12` cuando los cambios se integran en la rama predeterminada del repositorio. Como el flujo de trabajo utiliza `develop` como rama de integración, los Issues se cerrarán manualmente después del merge a `develop`, salvo que se configure otro mecanismo.
 
-## Proyecto FI-AFE
 
-Este repositorio forma parte del proyecto general:
-
-[FI-AFE_2026](https://github.com/Fundacion-Fulgor/FI-AFE_2026)
-
-El módulo se integra al repositorio principal como un submódulo del sistema completo.
