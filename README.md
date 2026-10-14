@@ -78,6 +78,16 @@ La carpeta `top/` permite integrar los modelos y realizar simulaciones del siste
 Los módulos de generación de señales, canal analógico y Cal ADC forman parte del entorno de simulación necesario para desarrollar y validar el estimador.
 
 La estructura se ampliará a medida que avance el proyecto, incorporando modelos en punto fijo, RTL y verificación dentro de los módulos correspondientes.
+
+### Integración del sistema
+
+En esta primera etapa, `top/` integra el banco de pruebas en Python, incluyendo la generación de señales, el canal analógico, el Cal ADC, el Channel Estimator y el correlador.
+
+Más adelante, se incorporará un `top` en RTL que integrará únicamente los bloques digitales correspondientes a la implementación en hardware del estimador.
+
+De esta manera, se mantiene una estructura común para la integración y validación del sistema durante las distintas etapas del desarrollo.
+
+
 ## Organización del trabajo
 
 Las tareas se organizarán utilizando **GitHub Projects**.
