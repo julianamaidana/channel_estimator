@@ -16,42 +16,37 @@ La documentación específica del estimador de canal se mantendrá en este repos
 
 ## Estructura inicial
 
-En esta primera etapa, el trabajo estará enfocado en la simulación de alto nivel.
+El repositorio se organiza de manera modular, siguiendo una estructura similar a la utilizada en proyectos de diseño digital.
+
+En esta primera etapa, el desarrollo estará enfocado en la simulación de alto nivel en Python.
 
 ```text
 channel_estimator/
 │
 ├── top/
 │   ├── python/
-│   ├── simulations/
-│   └── tests/
+│   └── simulations/
 │
 ├── modules/
-│   │
 │   ├── signal_generation/
 │   │   ├── python/
-│   │   ├── simulations/
-│   │   └── tests/
+│   │   └── simulations/
 │   │
 │   ├── analog_channel/
 │   │   ├── python/
-│   │   ├── simulations/
-│   │   └── tests/
+│   │   └── simulations/
 │   │
 │   ├── cal_adc/
 │   │   ├── python/
-│   │   ├── simulations/
-│   │   └── tests/
+│   │   └── simulations/
 │   │
 │   ├── channel_estimator/
 │   │   ├── python/
-│   │   ├── simulations/
-│   │   └── tests/
+│   │   └── simulations/
 │   │
 │   └── correlator/
 │       ├── python/
-│       ├── simulations/
-│       └── tests/
+│       └── simulations/
 │
 ├── docs/
 ├── .gitignore
@@ -61,19 +56,28 @@ channel_estimator/
 
 ### Descripción de las carpetas
 
+- `top/`: integración de los distintos módulos y simulaciones del sistema completo.
+- `modules/`: desarrollo independiente de los módulos que componen el sistema y su entorno de validación.
+- `docs/`: documentación técnica, decisiones de diseño y resultados relevantes.
+
+Dentro de `modules/` se encuentran:
+
 - `signal_generation/`: generación de señales de prueba, incluyendo PRBS, mapper PAM4 y pulse shaping.
 - `analog_channel/`: modelo del canal analógico equivalente SISO PTV, con 16 kernels FIR.
 - `cal_adc/`: modelo comportamental del ADC de calibración y sus no idealidades.
-- `channel_estimator/`: desarrollo del modelo adaptativo del CE, incluyendo selección de fases, ventanas de referencia y LMS.
+- `channel_estimator/`: desarrollo del estimador adaptativo, incluyendo selección de fases, ventanas de referencia y LMS.
 - `correlator/`: modelo para el alineamiento temporal entre la referencia digital y las observaciones del Cal ADC.
-- `simulations/`: simulaciones que integran los distintos bloques y permiten evaluar el comportamiento del sistema.
-- `tests/`: pruebas de funcionamiento y validación de los modelos individuales.
-- `docs/`: documentación técnica, decisiones de diseño y resultados relevantes.
 
-Los modelos de generación de señales, canal analógico y Cal ADC forman parte del entorno de simulación necesario para desarrollar y validar el estimador.
+Cada módulo contiene:
 
-La estructura se irá ampliando a medida que avance el proyecto, incorporando posteriormente los modelos en punto fijo, la implementación RTL y su verificación.
+- `python/`: implementación de los modelos de alto nivel.
+- `simulations/`: simulaciones, pruebas funcionales y validación del módulo.
 
+La carpeta `top/` permite integrar los modelos y realizar simulaciones del sistema completo.
+
+Los módulos de generación de señales, canal analógico y Cal ADC forman parte del entorno de simulación necesario para desarrollar y validar el estimador.
+
+La estructura se ampliará a medida que avance el proyecto, incorporando modelos en punto fijo, RTL y verificación dentro de los módulos correspondientes.
 ## Organización del trabajo
 
 Las tareas se organizarán utilizando **GitHub Projects**.
