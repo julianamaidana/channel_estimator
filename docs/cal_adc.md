@@ -159,8 +159,6 @@ Nota: con `L = 8`, para `BW ≥ 100 GHz` la discretización bilineal se aparta d
   - el offset no pueda ser absorbido por los filtros FIR y quede como un piso de error.
 - Por esto, la respuesta del T&H debería estimarse y removerse de `F̂` (Galetto et al., sec. IV-C).
 
-<!-- Completar: jitter y recorrido de las 16 fases -->
-
 ## Pendientes
 
 - Incorporar al repositorio la simulación de jitter y la del recorrido de fases.
