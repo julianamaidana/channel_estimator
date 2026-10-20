@@ -82,7 +82,7 @@ Con `M = 320` (paso 385 = 24·16 + 1) y `M = 640` (paso 769 = 48·16 + 1), cada 
 
 Sin jitter, `adc_cal` da exactamente lo mismo que `adc_cal_ideal`. Con jitter, el mismo δ da un error chico donde la señal es plana y uno grande donde es empinada. Con σ = 100 fs y el riel de QPSK, el error es de 10.1 mV rms, para una señal de 0.99 V rms.
 
-![Error de jitter](img/cal_adc/error_jitter.png)
+![Error de jitter](img/cal_adc/modelo_error_jitter.png)
 
 ### SNR por jitter
 
